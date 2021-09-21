@@ -5,6 +5,7 @@
     "scripts": {
         "lint": "prettier --write . && eslint --fix .",
         "debug": "DEBUG=api:* node --inspect ./bin/www",
+        "test": "jest",
         "start": "node ./bin/www"
     },
     "dependencies": {
@@ -16,13 +17,15 @@
     "devDependencies": {
         "eslint": "^7.32.0",
         "eslint-config-prettier": "^8.3.0",
+        "jest": "^27.2.1",
         "prettier": "^2.4.1"
     },
     "eslintConfig": {
         "env": {
             "commonjs": true,
             "es2021": true,
-            "node": true
+            "node": true,
+            "jest": true
         },
         "extends": [
             "eslint:recommended",
