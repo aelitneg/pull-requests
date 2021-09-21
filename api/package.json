@@ -1,0 +1,42 @@
+{
+    "name": "pull-requests-api",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "lint": "prettier --write . && eslint --fix .",
+        "debug": "DEBUG=api:* node --inspect ./bin/www",
+        "start": "node ./bin/www"
+    },
+    "dependencies": {
+        "cookie-parser": "~1.4.4",
+        "debug": "~2.6.9",
+        "express": "~4.16.1",
+        "morgan": "~1.9.1"
+    },
+    "devDependencies": {
+        "eslint": "^7.32.0",
+        "eslint-config-prettier": "^8.3.0",
+        "prettier": "^2.4.1"
+    },
+    "eslintConfig": {
+        "env": {
+            "commonjs": true,
+            "es2021": true,
+            "node": true
+        },
+        "extends": [
+            "eslint:recommended",
+            "prettier"
+        ],
+        "parserOptions": {
+            "ecmaVersion": 12
+        },
+        "rules": {}
+    },
+    "prettier": {
+        "trailingComma": "all",
+        "tabWidth": 4,
+        "semi": true,
+        "singleQuote": true
+    }
+}
