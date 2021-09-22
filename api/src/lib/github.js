@@ -14,13 +14,29 @@ class GitHub {
      * List pull requests for a repository.
      * @param {String} repositoryUrl
      */
-    static async listPulls(repositoryUrl) {
+    static listPulls(repositoryUrl) {
         const { owner, repository } = GitHub._parseRepositoryUrl(repositoryUrl);
 
-        const { data } = await axios
-            .get(`/repos/${owner}/${repository}/pulls`)
-            .then((res) => res);
-        return data;
+        return axios
+            .get(`/repos/${owner}/${repository}/pulls`, {
+                headers: {
+                    state: 'open', // Open pull requests only
+                },
+            })
+            .then((res) => res.data);
+    }
+
+    /**
+     * List commits for a pull request.
+     * @param {String} repositoryUrl
+     * @param {Number|String} number
+     */
+    static listPullCommits(repositoryUrl, number) {
+        const { owner, repository } = GitHub._parseRepositoryUrl(repositoryUrl);
+
+        return axios
+            .get(`/repos/${owner}/${repository}/pulls/${number}/commits`)
+            .then((res) => res.data);
     }
 
     /**

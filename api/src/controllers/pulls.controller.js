@@ -3,25 +3,24 @@ const GitHub = require('../lib/github');
 class Pulls {
     static async list(req, res, next) {
         try {
-            const data = await GitHub.listPulls(req.query.url);
+            // Get list of pull requests for repository
+            const pulls = await GitHub.listPulls(req.query.url);
 
-            const pulls = [];
-            data.forEach((d) => {
-                pulls.push({
-                    id: d.id,
-                    url: d.url,
-                    number: d.number,
-                    state: d.state,
-                    title: d.title,
-                    user: {
-                        login: d.user.login,
-                        avatarUrl: d.user.avatar_url,
-                    },
-                });
+            // Fire off pull requests for individual pull requests in parallel
+            const commitRequests = pulls.map((pull) => {
+                return GitHub.listPullCommits(req.query.url, pull.number);
+            });
+
+            const commits = await Promise.all(commitRequests);
+
+            // Merge pull and commit objects (array order is guaranteed)
+            pulls.forEach((pull, index) => {
+                pull.commits = commits[index];
             });
 
             return res.send(pulls);
         } catch (error) {
+            // Catch errors from API, forward to client for now
             if (error.isAxiosError) {
                 error.status = error.response.status;
                 error.message = error.response.data.message;
