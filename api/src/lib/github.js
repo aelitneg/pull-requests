@@ -45,7 +45,10 @@ class GitHub {
      * @returns {Object} { owner, repository }
      */
     static _parseRepositoryUrl(repositoryUrl) {
-        const [owner, repository] = repositoryUrl.split('/').slice(-2);
+        const [owner, repository] = repositoryUrl
+            .replace(/\/$/, '') // Remove trailing '/'
+            .split('/') // Break URL into its components
+            .slice(-2); // Last two components are /owner/repository
 
         return {
             owner,
