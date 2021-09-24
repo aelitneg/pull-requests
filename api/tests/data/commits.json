@@ -1,0 +1,81 @@
+[
+    {
+        "sha": "7745ce45cebf82d8611818b9ded5ad0563c46f5e",
+        "node_id": "C_kwDODqUnoNoAKDc3NDVjZTQ1Y2ViZjgyZDg2MTE4MThiOWRlZDVhZDA1NjNjNDZmNWU",
+        "commit": {
+            "author": {
+                "name": "dependabot[bot]",
+                "email": "49699333+dependabot[bot]@users.noreply.github.com",
+                "date": "2021-09-21T18:42:59Z"
+            },
+            "committer": {
+                "name": "GitHub",
+                "email": "noreply@github.com",
+                "date": "2021-09-21T18:42:59Z"
+            },
+            "message": "Bump tmpl from 1.0.4 to 1.0.5\n\nBumps [tmpl](https://github.com/daaku/nodejs-tmpl) from 1.0.4 to 1.0.5.\n- [Release notes](https://github.com/daaku/nodejs-tmpl/releases)\n- [Commits](https://github.com/daaku/nodejs-tmpl/commits/v1.0.5)\n\n---\nupdated-dependencies:\n- dependency-name: tmpl\n  dependency-type: indirect\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+            "tree": {
+                "sha": "0db9cdc3379375b5a98ce3dbc894496b0a809683",
+                "url": "https://api.github.com/repos/colinhacks/zod/git/trees/0db9cdc3379375b5a98ce3dbc894496b0a809683"
+            },
+            "url": "https://api.github.com/repos/colinhacks/zod/git/commits/7745ce45cebf82d8611818b9ded5ad0563c46f5e",
+            "comment_count": 0,
+            "verification": {
+                "verified": true,
+                "reason": "valid",
+                "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJhSiezCRBK7hj4Ov3rIwAAlOYIAFLetyxfSN+erB/IVWy+YIME\nFZgTlzYCUg+Rdps1KbyGr6dXnu38RcOf9FHOLTWAEJ3OB2Q0krNRgBwL6HMg9GRB\nEHyNxRrOy6td1shg82mTb8zv1Dpmpw5EpFYA6Ez88tErHRaFW2o1EblZSvsEjLnA\nUxIhflygzp00ac/wXSIj59Xg0PtFjndT0jnxOcw8DTb7OAOceRPPVIEm6cBe2xdO\nWSLnBdwE+Y8vaKhnzkSdtvmHCcQSxn2LD8Fvv0Vp0W8OPfv1KKuoa6dGpWJH63nz\nWeuR4d8aB3Sx72VnK0gFVuEjb7F89qU4+MflsjBPgrlf22N5+J0r7zVaEvSBgNk=\n=PZch\n-----END PGP SIGNATURE-----\n",
+                "payload": "tree 0db9cdc3379375b5a98ce3dbc894496b0a809683\nparent f455e3284f7a5cbe11259477073b15256b946133\nauthor dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com> 1632249779 +0000\ncommitter GitHub <noreply@github.com> 1632249779 +0000\n\nBump tmpl from 1.0.4 to 1.0.5\n\nBumps [tmpl](https://github.com/daaku/nodejs-tmpl) from 1.0.4 to 1.0.5.\n- [Release notes](https://github.com/daaku/nodejs-tmpl/releases)\n- [Commits](https://github.com/daaku/nodejs-tmpl/commits/v1.0.5)\n\n---\nupdated-dependencies:\n- dependency-name: tmpl\n  dependency-type: indirect\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+            }
+        },
+        "url": "https://api.github.com/repos/colinhacks/zod/commits/7745ce45cebf82d8611818b9ded5ad0563c46f5e",
+        "html_url": "https://github.com/colinhacks/zod/commit/7745ce45cebf82d8611818b9ded5ad0563c46f5e",
+        "comments_url": "https://api.github.com/repos/colinhacks/zod/commits/7745ce45cebf82d8611818b9ded5ad0563c46f5e/comments",
+        "author": {
+            "login": "dependabot[bot]",
+            "id": 49699333,
+            "node_id": "MDM6Qm90NDk2OTkzMzM=",
+            "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/dependabot%5Bbot%5D",
+            "html_url": "https://github.com/apps/dependabot",
+            "followers_url": "https://api.github.com/users/dependabot%5Bbot%5D/followers",
+            "following_url": "https://api.github.com/users/dependabot%5Bbot%5D/following{/other_user}",
+            "gists_url": "https://api.github.com/users/dependabot%5Bbot%5D/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/dependabot%5Bbot%5D/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/dependabot%5Bbot%5D/subscriptions",
+            "organizations_url": "https://api.github.com/users/dependabot%5Bbot%5D/orgs",
+            "repos_url": "https://api.github.com/users/dependabot%5Bbot%5D/repos",
+            "events_url": "https://api.github.com/users/dependabot%5Bbot%5D/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/dependabot%5Bbot%5D/received_events",
+            "type": "Bot",
+            "site_admin": false
+        },
+        "committer": {
+            "login": "web-flow",
+            "id": 19864447,
+            "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+            "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/web-flow",
+            "html_url": "https://github.com/web-flow",
+            "followers_url": "https://api.github.com/users/web-flow/followers",
+            "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+            "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+            "organizations_url": "https://api.github.com/users/web-flow/orgs",
+            "repos_url": "https://api.github.com/users/web-flow/repos",
+            "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/web-flow/received_events",
+            "type": "User",
+            "site_admin": false
+        },
+        "parents": [
+            {
+                "sha": "f455e3284f7a5cbe11259477073b15256b946133",
+                "url": "https://api.github.com/repos/colinhacks/zod/commits/f455e3284f7a5cbe11259477073b15256b946133",
+                "html_url": "https://github.com/colinhacks/zod/commit/f455e3284f7a5cbe11259477073b15256b946133"
+            }
+        ]
+    }
+]
