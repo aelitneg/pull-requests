@@ -4,7 +4,9 @@ class Pulls {
     static async list(req, res, next) {
         try {
             // Get list of pull requests for repository
-            const pulls = await GitHub.listPulls(req.query.url);
+            const pulls = await GitHub.listPulls(
+                decodeURIComponent(req.query.url),
+            );
 
             // Fire off pull requests for individual pull requests in parallel
             const commitRequests = pulls.map((pull) => {

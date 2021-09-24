@@ -6,5 +6,11 @@ const axios = Axios.create({
     baseURL: API_URL,
 });
 export const getPulls = async (repositoryUrl) => {
-    return await axios.get(repositoryUrl).then((res) => res.data);
+    return await axios
+        .get('/pulls', {
+            params: {
+                url: repositoryUrl,
+            },
+        })
+        .then((res) => res.data);
 };
