@@ -1,5 +1,8 @@
 # pull-requests
 
+![pull-requests](https://user-images.githubusercontent.com/8154090/134615732-91441c40-9c07-460c-af05-3cb2e69dfdeb.jpg)
+
+
 View open pull requests for a repository, including number of commits in the PR. 
 
 ## Setup
