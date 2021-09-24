@@ -1,10 +1,17 @@
 const express = require('express');
+const cors = require('cors');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 
 const pullsRouter = require('./routes/pulls.routes');
 
 const app = express();
+
+app.use(
+    cors({
+        origin: '*', // TODO: Lock down before deploy
+    }),
+);
 
 app.use(logger('dev'));
 app.use(express.json());
